@@ -8,16 +8,20 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+import online.jutter.temporal.items.ItemInit;
+
 @Mod(Temporal.MODID)
 public class Temporal {
 
-    static final String MODID = "temporal";
+    public static final String MODID = "temporal";
 
     public Temporal() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         //Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        ItemInit.ITEMS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
