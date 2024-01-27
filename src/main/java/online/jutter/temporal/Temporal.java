@@ -8,6 +8,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+import online.jutter.temporal.items.CreativeTabInit;
 import online.jutter.temporal.items.ItemInit;
 
 @Mod(Temporal.MODID)
@@ -22,12 +23,13 @@ public class Temporal {
         modEventBus.addListener(this::commonSetup);
 
         ItemInit.ITEMS.register(modEventBus);
-
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
-
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        CreativeTabInit.TABS.register(modEventBus);
+//
+//        // Register ourselves for server and other game events we are interested in
+//        MinecraftForge.EVENT_BUS.register(this);
+//
+//        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
+//        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     public void commonSetup(final FMLCommonSetupEvent event) {
