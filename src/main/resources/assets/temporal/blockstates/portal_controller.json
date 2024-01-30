@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "temporal:block/portal_controller",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "temporal:block/portal_controller"
+    },
+    "facing=south": {
+      "model": "temporal:block/portal_controller",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "temporal:block/portal_controller",
+      "y": 270
+    }
+  }
+}

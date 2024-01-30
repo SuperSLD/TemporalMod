@@ -1,5 +1,10 @@
 {
   "itemGroup.temporal": "Temporal Mod",
 
-  "item.temporal.temporal_cristal": "Temporal cristal"
+  "item.temporal.temporal_cristal": "Temporal cristal",
+
+  "block.temporal.portal_block": "Portal Block",
+  "block.temporal.portal_core": "Portal Core",
+  "block.temporal.portal_capacitor": "Portal Capacitor",
+  "block.temporal.portal_controller": "Portal Control"
 }

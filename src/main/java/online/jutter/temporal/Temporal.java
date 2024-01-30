@@ -1,13 +1,11 @@
 package online.jutter.temporal;
 
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+import online.jutter.temporal.blocks.BlockInit;
 import online.jutter.temporal.items.CreativeTabInit;
 import online.jutter.temporal.items.ItemInit;
 
@@ -23,6 +21,7 @@ public class Temporal {
         modEventBus.addListener(this::commonSetup);
 
         ItemInit.ITEMS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
         CreativeTabInit.TABS.register(modEventBus);
 //
 //        // Register ourselves for server and other game events we are interested in

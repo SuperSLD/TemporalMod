@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "temporal:block/portal_block"
+    }
+  }
+}

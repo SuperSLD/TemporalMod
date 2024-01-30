@@ -21,6 +21,11 @@ public class CreativeTabInit {
                     .icon(ItemInit.TEMPORAL_CRISTAL.get()::getDefaultInstance)
                     .displayItems((dp, outputs) -> {
                         outputs.accept(ItemInit.TEMPORAL_CRISTAL.get());
+                        outputs.accept(ItemInit.PORTAL_BLOCK_ITEM.get());
+                        outputs.accept(ItemInit.PORTAL_CORE_ITEM.get());
+                        outputs.accept(ItemInit.PORTAL_CAPACITOR_ITEM.get());
+                        outputs.accept(ItemInit.PORTAL_CONTROLLER_ITEM.get());
+                        outputs.accept(ItemInit.TEMPORAL_COMPRESSOR_ITEM.get());
                     })
                     .build()
     );

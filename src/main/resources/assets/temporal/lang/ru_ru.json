@@ -1,0 +1,10 @@
+{
+  "itemGroup.temporal": "Temporal Mod",
+
+  "item.temporal.temporal_cristal": "Темпоральный кристалл",
+
+  "block.temporal.portal_block": "Портальный блок",
+  "block.temporal.portal_core": "Ядро портала",
+  "block.temporal.portal_capacitor": "Портальный конденсатор",
+  "block.temporal.portal_controller": "Портальный контроллер"
+}
