@@ -25,6 +25,7 @@ public class CreativeTabInit {
                         outputs.accept(ItemInit.PORTAL_CORE_ITEM.get());
                         outputs.accept(ItemInit.PORTAL_CAPACITOR_ITEM.get());
                         outputs.accept(ItemInit.PORTAL_CONTROLLER_ITEM.get());
+                        outputs.accept(ItemInit.TEMPORAL_COMPRESSOR_ITEM.get());
                     })
                     .build()
     );

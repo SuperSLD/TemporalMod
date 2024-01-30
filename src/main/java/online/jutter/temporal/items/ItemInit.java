@@ -50,4 +50,12 @@ public class ItemInit {
                     new BlockItem.Properties()
             )
     );
+
+    public static final RegistryObject<Item> TEMPORAL_COMPRESSOR_ITEM = ITEMS.register(
+            "temporal_compressor",
+            () -> new BlockItem(
+                    BlockInit.TEMPORAL_COMPRESSOR.get(),
+                    new BlockItem.Properties()
+            )
+    );
 }

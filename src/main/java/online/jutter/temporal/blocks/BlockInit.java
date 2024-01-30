@@ -31,4 +31,10 @@ public class BlockInit {
             "portal_controller",
             () -> new PortalController(BlockBehaviour.Properties.of())
     );
+
+
+    public static final RegistryObject<Block> TEMPORAL_COMPRESSOR = BLOCKS.register(
+            "temporal_compressor",
+            () -> new TemporalCompressor(BlockBehaviour.Properties.of())
+    );
 }
